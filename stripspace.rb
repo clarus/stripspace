@@ -1,4 +1,3 @@
-
 for file in `git ls-files`.split
   puts file
   content = `git stripspace <#{file}`
