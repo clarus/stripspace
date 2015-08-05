@@ -1,5 +1,7 @@
 for file in `git ls-files`.split
-  puts file
   content = `git stripspace <#{file}`
-  File.open(file, "w") {|f| f << content}
+  if content != File.read(file) then
+    puts file
+    File.open(file, "w") {|f| f << content}
+  end
 end

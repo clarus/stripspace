@@ -3,4 +3,4 @@ Clean all spaces in a Git project.
 
     ruby stripspace.rb
 
-Applies the command `git stripspace` on each file of a Git repository.
+Applies the command [`git stripspace`](https://www.kernel.org/pub/software/scm/git/docs/git-stripspace.html) on each file of a Git repository.
